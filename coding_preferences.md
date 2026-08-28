@@ -55,7 +55,9 @@
 
 - prefer the newer python functions.
   E.g. instead of typing.List use list
-  
+
+- avoid programming patterns that exist only in python (e.g. the decorator pattern that is done with python specific keywords or the collections.abc package).
+  If possible stick to programming patterns that exist is standard OOP languages like c++
   
 ## Naming
 
