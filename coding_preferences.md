@@ -59,6 +59,17 @@
 - avoid programming patterns that exist only in python (e.g. the decorator pattern that is done with python specific keywords or the collections.abc package).
   If possible stick to programming patterns that exist is standard OOP languages like c++
   
+- To split a string in separate lines use the \ symbol instead of the parenthesis python trick.
+  For example, instead of:
+    calc_future_returns.description = (
+        f"long text A {aVariable} "
+        f"long text B {aVariable2}."
+    )
+  write:
+    calc_future_returns.description =  \
+        f"long text A {aVariable} "  \
+        f"long text B {aVariable2}." 
+
 ## Naming
 
 - Variables: camelCase
