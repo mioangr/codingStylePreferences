@@ -14,6 +14,9 @@
 
 - All class names should start with "c".
 
+- Classes should be separated from the other code using a comment block just above the start of the class.
+  The block should contain the class description and calling examples.
+
 - Try to have one responsibility per class and minimize its dependencies.
   
 - Closing braces or parenthesis:
