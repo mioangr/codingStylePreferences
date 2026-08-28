@@ -37,6 +37,15 @@
 
 - Use pathlib instead of os.path.
 
+- avoid as much as possible the use of None.
+  For example if a function is like myFunc(aParams: typing.Optional[typing.Sequence] = None)
+  prefer to check the parameter for an empty list instead of comparing it with the None value.
+  In many cases this will also remove the need to use the typing package.
+
+- prefer the newer python functions.
+  E.g. instead of typing.List use list
+  
+  
 ## Naming
 
 - Variables: camelCase
