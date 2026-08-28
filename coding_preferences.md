@@ -3,12 +3,19 @@
 ## General Principles
 
 - Prefer readability over cleverness.
+
 - Minimize dependencies.
+
 - Every function should explain what it does.
+
 - A short description should example what the blocks of code inside the function do.
+
 - For standard functions of the language that are not commonly known by the developers, explain with a comment what they do.
+
 - All class names should start with "c".
+
 - Try to have one responsibility per class and minimize its dependencies.
+  
 - Closing braces or parenthesis:
   Ideally the closing element should be at the same ident as the opening element.
   Avoid having the closing element (bracket or parenthesis) at the same ident as the command it started it. For example:
@@ -22,7 +29,8 @@
     ) from e
   or even better, keep it in the same line as the text is not too long:
   raise ConnectionError( f"Failed to connect to database '{self.filename}': {e}") from e
-  
+
+- Do not delete any comments. If a comment is outdated and does no longer reflect that the code does, add a comment below it, using your name and your finding.
 
 ### General Principles for Python
 - Add type hints where practical.
