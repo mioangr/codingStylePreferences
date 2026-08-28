@@ -1,0 +1,2 @@
+# codingStylePreferences
+Coding style preferences
