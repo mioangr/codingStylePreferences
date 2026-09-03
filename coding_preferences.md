@@ -44,13 +44,13 @@ raise ConnectionError( f"Failed to connect to database '{self.filename}': {e}") 
 ### General Principles for Python
 - Add type hints where practical.
 - Use explicit imports:
-```
-import pandas, numpy, tensorflow
-instead of 
-import pandas as pd
-import numpy as np
-import tensorflow as tf
-```
+  ```
+  import pandas, numpy, tensorflow
+  instead of 
+  import pandas as pd
+  import numpy as np
+  import tensorflow as tf
+  ```
   
 - use the full namespace when accessing functions, e.g. tensorflow.keras
 
