@@ -23,21 +23,21 @@
   Ideally the closing element should be at the same ident as the opening element.
   Avoid having the closing element (bracket or parenthesis) at the same ident as the command it started it. For example:
   Instead of
-```
-raise ConnectionError(
-  f"Failed to connect to database '{self.filename}': {e}"
-) from e
-```
-  use
-```
-raise ConnectionError(
-  f"Failed to connect to database '{self.filename}': {e}"
+  ```
+  raise ConnectionError(
+    f"Failed to connect to database '{self.filename}': {e}"
   ) from e
-```
+  ```
+  use
+  ```
+  raise ConnectionError(
+    f"Failed to connect to database '{self.filename}': {e}"
+    ) from e
+  ```
   or even better, keep it in the same line as the text is not too long:
-```
-raise ConnectionError( f"Failed to connect to database '{self.filename}': {e}") from e
-```
+  ```
+  raise ConnectionError( f"Failed to connect to database '{self.filename}': {e}") from e
+  ```
   
 - Do not delete any comments. If a comment is outdated and does no longer reflect that the code does, add a comment below it, using your name and your finding.
 
@@ -80,7 +80,7 @@ raise ConnectionError( f"Failed to connect to database '{self.filename}': {e}") 
     calc_future_returns.description =  \
         f"long text A {aVariable} "  \
         f"long text B {aVariable2}." 
-```
+  ```
 
 ## Naming
 
