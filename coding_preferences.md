@@ -38,12 +38,14 @@
 ### General Principles for Python
 - Add type hints where practical.
 - Use explicit imports:
+  '''
   import pandas, numpy, tensorflow
   instead of 
   import pandas as pd
   import numpy as np
   import tensorflow as tf
-
+  '''
+  
 - use the full namespace when accessing functions, e.g. tensorflow.keras
 
 - Use pathlib instead of os.path.
