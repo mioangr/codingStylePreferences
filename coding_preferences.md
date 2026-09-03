@@ -8,8 +8,6 @@
 
 - Every function should explain what it does.
 
-- For standard functions of the language that are not commonly known by the developers, explain with a comment what they do.
-
 - All class names should start with "c".
 
 - Classes should be separated from the other code using a comment block just above the start of the class.
