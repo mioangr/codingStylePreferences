@@ -8,8 +8,6 @@
 
 - Every function should explain what it does.
 
-- A short description should example what the blocks of code inside the function do.
-
 - For standard functions of the language that are not commonly known by the developers, explain with a comment what they do.
 
 - All class names should start with "c".
@@ -39,7 +37,6 @@
   raise ConnectionError( f"Failed to connect to database '{self.filename}': {e}") from e
   ```
   
-- Do not delete any comments. If a comment is outdated and does no longer reflect that the code does, add a comment below it, using your name and your finding.
 
 ### General Principles for Python
 - Add type hints where practical.
@@ -81,6 +78,19 @@
         f"long text A {aVariable} "  \
         f"long text B {aVariable2}." 
   ```
+
+## Commenting
+
+- When adding your comments, prefix them with your name and the date you added them. This will help separate the AI comments from the developer's comments.
+
+- When the comment is short and the code line it refers to is also short, put it at the end of the line instead of putting it above the line.
+
+- When starting a block of code, add a short comment explaining what the is supposed to block do.
+
+- When writing code that uses language idioms or calls functions that are not widely known by developers, add a comment to explain what the idioms of functions do.
+
+- Do not delete any comments. If a comment is outdated and does no longer reflect that the code does, add a comment below it, using your name and your finding.
+
 
 ## Naming
 
