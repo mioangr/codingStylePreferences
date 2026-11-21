@@ -106,6 +106,10 @@ Also add comments about what the parts/blocks of code do.
 These comments should also serve as the documentation for the function.
 When humans or the AI, reads the function they should get clear understanding of what it wants to do (from the function comments at the start) and what it actually does (from the various comments inline with the code parts).
 
+- In Python, for single line comments use the # character.  
+Do not use the quotes as in the following example:  
+"""Comment about a function"""
+
 ## Naming
 
 - Variables: camelCase
