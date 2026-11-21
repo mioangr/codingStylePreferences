@@ -14,7 +14,18 @@
   The block should contain the class description and calling examples.
 
 - Try to have one responsibility per class and minimize its dependencies.
-  
+
+- Leave two blank lines between function implementations.
+
+- When refactoring existing functions or code, do not change the names of the variables.  
+You can propose name changes to match common naming conventions.  
+I will need to approve your proposals.
+
+- for new complex function or for functions that I indicate, create also a selftest function that will use synthetic data to test the results of the new function.
+The name of the selftest function should be as the name of the new function with the prefix "selfTest_"
+The synthetic data should first contain typical data and then corner cases (special cases of data or data combinations) to make the test more robust.
+
+
 - Closing braces or parenthesis:
   Ideally the closing element should be at the same ident as the opening element.
   Avoid having the closing element (bracket or parenthesis) at the same ident as the command it started it. For example:
@@ -87,8 +98,13 @@
 
 - When writing code that uses language idioms or calls functions that are not widely known by developers, add a comment to explain what the idioms of functions do.
 
-- Do not delete any comments. If a comment is outdated and does no longer reflect that the code does, add a comment below it, using your name and your finding.
+- Do not delete or modify any of my comments.
+- If a comment is outdated and does no longer reflect that the code does, add a comment below it, using your name and your finding.
 
+- Always add comments on what a new function does.
+Also add comments about what the parts/blocks of code do.
+These comments should also serve as the documentation for the function.
+When humans or the AI, reads the function they should get clear understanding of what it wants to do (from the function comments at the start) and what it actually does (from the various comments inline with the code parts).
 
 ## Naming
 
